@@ -1,0 +1,16 @@
+lcd.c:15:6:Delay_us	24	static,ignoring_inline_asm
+lcd.c:39:6:lcd_Init	16	static
+lcd.c:61:6:lcd_clrscr	8	static
+lcd.c:67:6:lcd_puts	16	static
+lcd.c:94:6:lcd_pos_puts	16	static
+lcd.c:100:6:lcd_DspOn	8	static
+lcd.c:105:6:lcd_DspOff	8	static
+lcd.c:110:6:lcd_BlinkOn	8	static
+lcd.c:115:6:lcd_BlinkOff	8	static
+lcd.c:120:6:lcd_CursorOn	8	static
+lcd.c:125:6:lcd_CursorOff	8	static
+lcd.c:130:13:Command	16	static
+lcd.c:137:13:lcd_write_data	16	static
+lcd.c:144:13:Command4Bit	16	static
+lcd.c:153:6:lcd_gotoxy	24	static
+lcd.c:163:6:lcd_Put	16	static
