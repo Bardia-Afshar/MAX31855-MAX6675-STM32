@@ -1,5 +1,17 @@
 # MAX31855-MAX6675-STM32
-Library for MAX6675 from Maxim Integrated for STM32 
+Library for MAX31855/MAX6675 from Maxim Integrated for STM32 
+
+## Update
+
+As I needed to measure higher temperature and especially negative ones, I decided to use MAX31855 instead of MAX6675 in my new project. I updated the repo and added the library for MAX31855 too. Also, I uploaded a breakout board for MAX31855 and an example code in stm32cubeIDE.
+
+
+![Untitled-min](https://user-images.githubusercontent.com/54714609/108538799-6eb6ea00-72f4-11eb-8e84-09f3d80db379.jpg)
+![2021-02-19_192348](https://user-images.githubusercontent.com/54714609/108536478-bee07d00-72f1-11eb-817e-41eebad99f35.jpg)
+![2021-02-19_192639](https://user-images.githubusercontent.com/54714609/108536468-bd16b980-72f1-11eb-8dc4-bf7dd1f496da.jpg)
+![2021-02-19_192443](https://user-images.githubusercontent.com/54714609/108536476-be47e680-72f1-11eb-8591-5b23055e78a5.jpg)
+
+
 
 ## Introduction
 
