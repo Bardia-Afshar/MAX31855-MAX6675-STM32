@@ -60,5 +60,12 @@ Both chips are read-only SPI slaves (mode 0, MSB-first, no MOSI):
    watch temperatures in a debugger, or use a tool like
    [MCUViewer](https://github.com/klonyyy/MCUViewer) to read the variable
    live, like in the screenshot below.
+> **Note:** the `_dma` examples still use `HAL_Delay` + a busy-wait in
+> `main.c` to pace reads. DMA only frees the CPU during the SPI
+> transfer — something still has to wait out the chip's ~100–220 ms
+> conversion time before the next `*_StartRead`. A fully non-blocking
+> version would use a hardware timer (e.g. TIM6) with a period-elapsed
+> interrupt calling `*_StartRead`, leaving `while (1)` empty.
+   
 <img width="1920" height="1032" alt="Example" src="https://github.com/user-attachments/assets/c21ab673-2db7-44f1-9eb6-910f8d098832" />
 
